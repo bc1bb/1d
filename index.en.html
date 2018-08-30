@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"> 
+<html>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <title>1d</title>
+<noscript>Delete IE !</noscript>
+<style>
+@font-face {
+    font-family: 'robotolight';
+    src: url('Roboto-Light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+font-family: 'robotolight';
+}
+</style>
+<script type="text/javascript">
+function dice() {
+nb = document.getElementById("nb").value
+
+score = Math.floor(Math.random() * Math.floor(nb))+1
+
+console.log(score);
+document.getElementById("result").innerHTML = score + "<br>";
+}
+</script>    
+</head>
+<body>
+<div align="center">
+<h1>1d</h1>
+<form class="pure-form pure-form-stacked">
+<fieldset>
+<input type="text" name="Name" id="nb" placeholder="1d ?">
+</fieldset></form><br>
+<button type="submit" class="pure-button pure-button-primary" onclick="dice()">1d !</button>
+<br><br>
+<p id="result"><span class="pure-form-message">Result will be here</span></p>
+</div>
+</body>
+</html>
