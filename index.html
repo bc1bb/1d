@@ -3,7 +3,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-    <title>DPP - Dé Pa Pipé</title>
+    <title>1d</title>
 <noscript>Faut virer IE bordel !</noscript>
 <style>
 @font-face {
@@ -17,18 +17,10 @@ font-family: 'robotolight';
 }
 </style>
 <script type="text/javascript">
-function depapipe() {
-usr = document.getElementById("name").value
+function 1d() {
+nb = document.getElementById("nb").value
 
-score = Math.floor(Math.random() * Math.floor(19))+1
-if (usr === "Jus de Patate" || usr === "jusdepatate") {
-    while (score <= 10) {
-        console.log(score);
-        score = Math.floor(Math.random() * Math.floor(19))+1
-    }
-} if (usr === "MJ" || usr === "mj" || usr === "Mj" || usr === "mJ") {
-    score = 1
-}
+score = Math.floor(Math.random() * Math.floor(nb))+1
 
 console.log(score);
 document.getElementById("result").innerHTML = score + "<br>";
@@ -40,9 +32,9 @@ document.getElementById("result").innerHTML = score + "<br>";
 <h1>Dé Pa Pipé</h1>
 <form class="pure-form pure-form-stacked">
 <fieldset>
-<input type="text" name="Nom" id="name" placeholder="Nom d'utilisateur">
+<input type="text" name="Nom" id="nb" placeholder="1d ?">
 </fieldset></form><br>
-<button type="submit" class="pure-button pure-button-primary" onclick="depapipe()">D20 !</button>
+<button type="submit" class="pure-button pure-button-primary" onclick="1d()">1d !</button>
 <br><br>
 <p id="result"><span class="pure-form-message">Le résultat va arriver ici</span></p>
 </div>
