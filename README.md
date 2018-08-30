@@ -1,7 +1,8 @@
-# Dé Pa Pipé
-Projet perso a la con partit d'un delire sur discord
+# 1d
+Projet perso basé dépapipé
 
-Il n'y a qu'a lire le javascript pour comprendre ;)
-
+> 1d ?
+1d20 = lancé de 1 dés de 20
+1dx = lancé de 1 dés de x
 > Utilise PureCSS
 <br> Utilise Roboto Thin, offert par FontSquirrel
