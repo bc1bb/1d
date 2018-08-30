@@ -17,7 +17,7 @@ font-family: 'robotolight';
 }
 </style>
 <script type="text/javascript">
-function 1d() {
+function lance() {
 nb = document.getElementById("nb").value
 
 score = Math.floor(Math.random() * Math.floor(nb))+1
@@ -34,7 +34,7 @@ document.getElementById("result").innerHTML = score + "<br>";
 <fieldset>
 <input type="text" name="Nom" id="nb" placeholder="1d ?">
 </fieldset></form><br>
-<button type="submit" class="pure-button pure-button-primary" onclick="1d()">1d !</button>
+<button type="submit" class="pure-button pure-button-primary" onclick="lance()">1d !</button>
 <br><br>
 <p id="result"><span class="pure-form-message">Le résultat va arriver ici</span></p>
 </div>
