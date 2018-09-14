@@ -23,9 +23,11 @@ document.getElementById("result").innerHTML = score + "<br>";
 </div>
 <div align="center" id="wrapper">
 <h1>1d</h1>
-<form class="pure-form pure-form-stacked">
 <fieldset>
-<input type="text" name="Nom" id="nb" placeholder="1d ?">
+    <div class="material-textfield blue">
+<input type="text" name="Name" id="nb" required/>
+        <label data-content="username">1d ?</label>
+    </div>
 </fieldset></form><br>
 <button type="submit" class="pure-button pure-button-primary" onclick="lance()">1d !</button>
 <br><br>
