@@ -3,19 +3,9 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+<link rel="stylesheet" href="style.css">
     <title>1d</title>
 <noscript>Faut virer IE bordel !</noscript>
-<style>
-@font-face {
-    font-family: 'robotolight';
-    src: url('Roboto-Light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-body{
-font-family: 'robotolight';
-}
-</style>
 <script type="text/javascript">
 function lance() {
 nb = document.getElementById("nb").value
@@ -31,7 +21,7 @@ document.getElementById("result").innerHTML = score + "<br>";
 <div align="right">
     <a href="index.en.html">English version</a>
 </div>
-<div align="center">
+<div align="center" id="wrapper">
 <h1>1d</h1>
 <form class="pure-form pure-form-stacked">
 <fieldset>
