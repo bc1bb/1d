@@ -10,3 +10,7 @@ Projet perso basé sur dépapipé
 
 > Utilise PureCSS
 <br> Utilise Roboto Thin, offert par FontSquirrel
+
+> CSS :
+<br>https://codepen.io/KtorZ/pen/ZOzdqG/
+<br>https://purecss.io
