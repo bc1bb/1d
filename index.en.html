@@ -3,11 +3,11 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
     <title>1d</title>
 <noscript>Delete IE !</noscript>
 <script type="text/javascript">
-function dice() {
+function lance() {
 nb = document.getElementById("nb").value
 
 score = Math.floor(Math.random() * Math.floor(nb))+1
@@ -19,20 +19,17 @@ document.getElementById("result").innerHTML = score + "<br>";
 </head>
 <body>
 <div align="right">
-    <a href="index.html">Version française</a>
+    <a href="index.html">Version Française</a>
 </div>
 <div align="center" id="wrapper">
 <h1>1d</h1>
-<form class="pure-form pure-form-stacked">
-<fieldset>
     <div class="material-textfield blue">
 <input type="text" name="Name" id="nb" required/>
-        <label data-content="username">1d ?</label>
-    </div>
-</fieldset></form><br>
-<button type="submit" class="pure-button pure-button-primary" onclick="dice()">1d !</button>
+        <label data-content="1d ?">1d ?</label>
+    </div><br>
+<button type="submit" class="pure-button pure-button-primary" onclick="lance()">1d !</button>
 <br><br>
-<p id="result"><span class="pure-form-message">Result will be here</span></p>
+<p id="result"><span class="pure-form-message">Result goes here</span></p>
 </div>
 </body>
 </html>
