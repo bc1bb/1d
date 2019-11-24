@@ -1,35 +1,23 @@
 <!DOCTYPE html>
 <meta charset="UTF-8"> 
 <html>
-<head>
-<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-<link rel="stylesheet" href="style.css">
-    <title>1d</title>
-<noscript>Faut virer IE bordel !</noscript>
-<script type="text/javascript">
-function lance() {
-nb = document.getElementById("nb").value
-
-score = Math.floor(Math.random() * Math.floor(nb))+1
-
-console.log(score);
-document.getElementById("result").innerHTML = score + "<br>";
-}
-</script>    
-</head>
-<body>
-<div align="right">
-    <a href="index.en.html">English version</a>
-</div>
-<div align="center" id="wrapper">
-<h1>1d</h1>
-    <div class="material-textfield blue">
-<input type="text" name="Name" id="nb" required/>
-        <label data-content="1d ?">1d ?</label>
-    </div><br>
-<button type="submit" class="pure-button pure-button-primary" onclick="lance()">1d !</button>
-<br><br>
-<p id="result"><span class="pure-form-message">Le résultat va arriver ici</span></p>
-</div>
-</body>
-</html>
+    <head>
+        <link rel="stylesheet" href="src/css/pure-min.css">
+        <link rel="stylesheet" href="src/css/style.css">
+        <title>1d</title>
+        <noscript>Please enable JS</noscript>
+        <script src="src/js/js.js"></script> 
+    </head>
+    <body>
+        <div class="main">
+            <span class="title">1d</span> - <span class="subtitle">dice roller</span>
+            <div class="pure-form">
+                <input type="text" id="1d" placeholder="1d">
+            </div>
+            <br>
+            <button type="submit" class="pure-button pure-button-primary" onclick="roll()">1d !</button>
+            <br><br>
+            <span class="pure-form-message" id="result">Result will be here</span>
+        </div>
+    </body>
+</html> 
