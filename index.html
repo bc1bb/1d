@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
 <html>
-    <head>
-        <link rel="stylesheet" href="src/css/pure-min.css">
-        <link rel="stylesheet" href="src/css/style.css">
-        <title>1d</title>
-        <noscript>Please enable JS</noscript>
-        <script src="src/js/js.js"></script> 
-    </head>
-    <body>
-        <div class="main">
-            <span class="title">1d</span> - <span class="subtitle">dice roller</span>
-            <div class="pure-form">
-                <input type="text" id="1d" placeholder="1d">
-            </div>
-            <br>
-            <button type="submit" class="pure-button pure-button-primary" onclick="roll()">1d !</button>
-            <br><br>
-            <span class="pure-form-message" id="result">Result will be here</span>
-        </div>
-    </body>
-</html> 
+<head>
+    <title>1d</title>
+    <noscript>Please enable JavaScript.</noscript>
+    <script>
+        function roll() {
+            const i = document.getElementById("1d").value;
+            let score = Math.ceil(Math.random() * i);
+            let date = new Date();
+
+            console.log(date.toLocaleTimeString(), "1d"+i+":", score);
+            document.getElementById("result").innerHTML = score.toString();
+        }
+    </script>
+    <style>
+        body,input::placeholder,button {
+            color: #293133;
+            text-align: center;
+            font-family: arial, sans-serif;
+        }
+        input {
+            text-align: center;
+            height: 20px;
+        }
+        button {
+            height: 30px;
+        }
+        .title {
+            font-size: 70px;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 15px;
+            font-style: italic;
+        }
+        #forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;left:-60px;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);box-shadow:;}}
+
+        @media (prefers-color-scheme: dark) {
+            body,input,button {
+                background-color: #293133;
+            }
+            body,input::placeholder,button {
+                color: #D3D3D3;
+            }
+        }
+    </style>
+</head>
+<body>
+<span id="forkongithub"><a href="https://github.com/jusdepatate/1d">Fork 1d on GitHub</a></span>
+<form class="main" action="#">
+    <label for="1d">
+        <h1 class="title">1d</h1><br>
+        <span class="subtitle">dice roller,<br>as simple as that.</span><br>
+    </label><br>
+    <input type="text" id="1d" placeholder="1d">
+    <br>
+    <button type="submit" onclick="roll()">roll!</button>
+    <br><br>
+    <span id="result">0</span>
+</form>
+</body>
+</html>
